@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 type Todo = {
   id: number;
@@ -62,7 +62,8 @@ const App: React.FC = () => {
                 >
                   {todo.isCompleted ? "Undo" : "Complete"}
                 </button>
-                {todo.text}
+
+                <p> {todo.text}</p>
 
                 <button
                   onClick={() => deleteTodo(todo.id)}
