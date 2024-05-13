@@ -63,7 +63,7 @@ const App: React.FC = () => {
                   {todo.isCompleted ? "Undo" : "Complete"}
                 </button>
 
-                <p> {todo.text}</p>
+                <p className=""> {todo.text}</p>
 
                 <button
                   onClick={() => deleteTodo(todo.id)}
